@@ -24,7 +24,7 @@ def extract_data_from_pdf(pdf_path):
         st.write("Ordre de Service N°:", OS_number)
     
     # Extract PNP ID
-    pnp_id_matches = re.findall(r'PNP \d+ \d+', text)
+    pnp_id_matches = re.findall(r'PNP \d+ \d+ :', text)
     pnp_ids = pnp_id_matches if pnp_id_matches else None
     pnps_stripped = [pnp_ids[i].strip(" :") for i in range(len(pnp_ids))]
     PNPs = pnps_stripped
