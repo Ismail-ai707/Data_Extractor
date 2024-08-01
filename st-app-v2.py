@@ -66,7 +66,7 @@ def extract_data_from_file(file_path):
     }
     return pd.DataFrame(data)
 
-st.title('PDF and Word Data Extractor')
+st.title('OS Data Extractor')
 
 uploaded_files = st.file_uploader("Choose PDF or Word files", type=["pdf", "docx", "doc"], accept_multiple_files=True)
 
